@@ -9,13 +9,17 @@ export const NewsItem = ({ items, category, setProgress }) => {
     const [articles, setResult] = useState([])
     const [page, setPage] = useState(1)
     const [pageSize, setPageSize] = useState(0)
-    const concatResult = async (country) => {
-        const doc = await fetch(`https://newsapi.org/v2/top-headlines?country=${country}${category && category !== undefined ? `&category=${category}` : ''}&apiKey=${process.env.REACT_APP_API_KEY}&pageSize=${items}&page=${page + 1}`)
-        const resultData = await doc.json()
-        console.log(resultData)
-        setResult(articles.concat(resultData.articles))
-        setPage(page + 1)
-        setPageSize(resultData.totalResults)
+    const [emptyResult, setEmptyResult] = useState(false)
+    const concatResult = (country) => {
+        setTimeout(async () => {
+            const doc = await fetch(`https://newsapi.org/v2/top-headlines?country=${country}${category && category !== undefined ? `&category=${category}` : ''}&apiKey=${process.env.REACT_APP_API_KEY}&pageSize=${items}&page=${page + 1}`)
+            const resultData = await doc.json()
+            console.log(resultData)
+            setResult(articles.concat(resultData.articles))
+            setEmptyResult(resultData.articles.length === 0)
+            setPage(page + 1)
+            setPageSize(resultData.totalResults)
+        }, 500)
     }
 
     useEffect(() => {
@@ -31,9 +35,9 @@ export const NewsItem = ({ items, category, setProgress }) => {
                 <InfiniteScroll
                     dataLength={articles.length}
                     next={() => concatResult("in")}
-                    hasMore={articles.length !== pageSize}
+                    hasMore={!emptyResult && articles.length !== pageSize}
                     loader={
-                        <h6 className="text-center">
+                        <h6 className="text-center text-info">
                             <div className="spinner-border" role="status">
                                 <span className="visually-hidden">Loading...</span>
                             </div>
@@ -55,6 +59,6 @@ NewsItem.propTypes = {
 }
 
 NewsItem.defaultProps = {
-    items: 6,
+    items: 9,
 }
 

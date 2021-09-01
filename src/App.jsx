@@ -4,6 +4,7 @@ import './App.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { NewsItem } from './Components/pages/NewsItem';
 import { NavbarItem } from './Components/items/NavbarItem';
+import { ScrollTop } from './Components/items/ScrollTop';
 
 const App = () => {
 	const [progress, setProgress] = useState(0)
@@ -38,6 +39,7 @@ const App = () => {
 					<NewsItem category="health" setProgress={setProgress} />
 				</Route>
 			</Switch>
+			<ScrollTop/>
 		</Router>
 	);
 }
