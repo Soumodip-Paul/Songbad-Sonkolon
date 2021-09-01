@@ -1,16 +1,27 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { capitalizedFirstLetter } from '../utils/TextUtils'
+import { getTimeAgo } from '../utils/TimeUtils'
+import { DarkModeContext } from './DarkMode'
 
 const placeholderImage = "https://4.bp.blogspot.com/-O3EpVMWcoKw/WxY6-6I4--I/AAAAAAAAB2s/KzC0FqUQtkMdw7VzT6oOR_8vbZO6EJc-ACK4BGAYYCw/w480/nth.png"
 
 export const Card = ({ result }) => {
+
+    const darkMode = useContext(DarkModeContext)
+    const mode = darkMode.darkMode ? " bg-dark text-light":""
+
     return (
-        <div className="card" style={{ width: '18rem' }}>
+        <div className={"card text-center"+ mode} style={{ width: '18rem' }}>
             <CardBadge>{result.source.name}</CardBadge>
             <img src={result.urlToImage ? result.urlToImage : placeholderImage} className="card-img-top" alt="..." />
             <div className="card-body">
                 <h5 className="card-title">{result.title ? result.title : "News Title"}</h5>
+                <p className="card-text text-end"><small className="text-muted">{result.author && <em>by - {capitalizedFirstLetter(result.author)}</em>}</small></p>
                 <p className="card-text">{result.description ? result.description : ""}</p>
                 <a href={result.url} rel="noreferrer" target="_blank" className="btn btn-primary">Read More</a>
+            </div>
+            <div className="card-footer">
+                <small className="text-muted">Last updated {getTimeAgo(result.publishedAt)}</small>
             </div>
         </div>
     )

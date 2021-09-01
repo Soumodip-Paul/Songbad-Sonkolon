@@ -1,8 +1,10 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useContext} from 'react'
 import { CardGrid, CardGridItem } from '../items/Card'
-import PropTypes from 'prop-types'
 import { getNews, getNewsByCategory } from '../utils/fetchNewsUtils'
 import InfiniteScroll from 'react-infinite-scroll-component'
+import { capitalizedFirstLetter } from '../utils/TextUtils'
+import { DarkModeContext } from '../items/DarkMode'
+import PropTypes from 'prop-types'
 
 export const NewsItem = ({ items, category, setProgress }) => {
 
@@ -10,6 +12,7 @@ export const NewsItem = ({ items, category, setProgress }) => {
     const [page, setPage] = useState(1)
     const [pageSize, setPageSize] = useState(0)
     const [emptyResult, setEmptyResult] = useState(false)
+    const darkMode = useContext(DarkModeContext)
     const concatResult = (country) => {
         setTimeout(async () => {
             const doc = await fetch(`https://newsapi.org/v2/top-headlines?country=${country}${category && category !== undefined ? `&category=${category}` : ''}&apiKey=${process.env.REACT_APP_API_KEY}&pageSize=${items}&page=${page + 1}`)
@@ -20,10 +23,6 @@ export const NewsItem = ({ items, category, setProgress }) => {
             setPage(page + 1)
             setPageSize(resultData.totalResults)
         }, 500)
-    }
-
-    const capitalizedFirstLetter = (text) => {
-        return text.charAt(0).toLocaleUpperCase().concat(text.slice(1))
     }
 
     useEffect(() => {
@@ -41,6 +40,8 @@ export const NewsItem = ({ items, category, setProgress }) => {
         <>
             {articles && articles !== undefined ?
                 <InfiniteScroll
+                    style={{minHeight: "91.4vh"}}
+                    className={`${darkMode.darkMode ? "bg-secondary":""}`}
                     dataLength={articles.length}
                     next={() => concatResult("in")}
                     hasMore={!emptyResult && articles.length !== pageSize}
