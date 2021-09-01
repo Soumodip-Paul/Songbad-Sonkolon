@@ -22,11 +22,19 @@ export const NewsItem = ({ items, category, setProgress }) => {
         }, 500)
     }
 
+    const capitalizedFirstLetter = (text) => {
+        return text.charAt(0).toLocaleUpperCase().concat(text.slice(1))
+    }
+
     useEffect(() => {
-        if (category && category !== undefined)
+        if (category && category !== undefined) {
+            document.title = capitalizedFirstLetter(category) + " : Songbad Sonkolon"
             getNewsByCategory("in", category, setResult, setProgress, items, 1, setPageSize)
-        else
+        }
+        else {
+            document.title = "Songbad Sonkolon : News App made for you"
             getNews("in", setResult, setProgress, items, 1, setPageSize)
+        }
     }, [setProgress, category, items])
 
     return (
