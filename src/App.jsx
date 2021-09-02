@@ -7,10 +7,11 @@ import { NavbarItem } from './Components/items/NavbarItem';
 import { ScrollTop } from './Components/items/ScrollTop';
 import { DarkModeContext } from './Components/items/DarkMode';
 import { Footer } from './Components/items/Footer';
+import { isDefaultDarkMode } from './constants';
 
 const App = () => {
 	const [progress, setProgress] = useState(0)
-	const [darkMode, setDarkMode] = useState(true)
+	const [darkMode, setDarkMode] = useState(isDefaultDarkMode)
 	return (
 		<DarkModeContext.Provider value={{ darkMode: darkMode, setDarkMode: setDarkMode }}>
 			<Router>

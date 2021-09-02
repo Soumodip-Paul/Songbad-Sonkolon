@@ -1,70 +1,123 @@
-# Getting Started with Create React App
+# Songbad Sonkolon
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+***Songbad Sonkolon*** is a **NEWS APP** which fetces _Latest News_ from the web and show it in the page. Read the *Top Headlines* and news from different categories like _Business, Entertainment, General, Health, Science, Sports, Technology_  . You can scroll through all  of the news easily and efficiently, with only one click you can read your favourite news, goto to your favourite category.Feeling irritating with the color! Change the theme between Light mode and Dark Mode according to your comfortability from the top right corner. Are you have scrolled too many down to page? Don't worry, You can Scorll to top with just only one click on the bottom right arrow . Songbad Sonkolon is here to provide news according according to your wish. No matter you are using it in your Mobile, Tablet or PC. We are always there
 
-## Available Scripts
+## Images
 
-In the project directory, you can run:
+***Original Landing Page in PC***
+![IMG](https://lh3.googleusercontent.com/-iBQN2ZBDq6s/YTCIffQYXPI/AAAAAAAAAAM/ZzoTo2xtiDIbTUKfUqp2yNXmzGocpC2pgCLcBGAsYHQ/localhost_3000_%2B%25282%2529.png)
 
-### `npm start`
+***Landing Page in Mobile (MOTO G4) ***
+![IMG](https://lh3.googleusercontent.com/-50XB7uSTMqs/YTCIfvYtdkI/AAAAAAAAAAQ/V1Ry6_pU43YJ8ke6MMczQMVBnoezGhfQQCLcBGAsYHQ/localhost_3000_%2528Moto%2BG4%2529.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+***Full Page in Dark Mode***
+![IMG](https://lh3.googleusercontent.com/-BaC2gegumt4/YTCIfmI4mFI/AAAAAAAAAAY/mO0vS4mBsCcNRJs--nDsM8P337n7ee_pwCLcBGAsYHQ/localhost_3000_.png)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+***Full Page in Light Mode***
+![IMG](https://lh3.googleusercontent.com/-FRMQ2TOrE94/YTCIfozskoI/AAAAAAAAAAU/K64Z8Y8m_AMGVX5rk_sOzqi2I-rwk3sZwCLcBGAsYHQ/localhost_3000_%2B%25281%2529.png)
 
-### `npm test`
+# Developer Guide
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This is a *single page web app* which is created using [React JS](https://reactjs.org). It uses `fetch API` for making api request from [News API](https://newsapi.org) server. This project uses [Bootstrap](https://getbootstrap.com) as _CSS_ library and also uses [Google Material Icons](https://fonts.google.com/icons)
+for _UI icons_. For dark theme _React `useContext` hook_ is used. The project also uses 3 React packages
 
-### `npm run build`
+- React-Router
+- React-Top-Loading-Bar
+- React-Infinite-Scroll-Component
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This is a public repository so you are open to contribute in my project to make it better.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Project Setup
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Get your API key
 
-### `npm run eject`
+1. Goto [NewsApi Official website](https://newsapi.org "newsapi.org") 
+2. Click on ***Get API Key***
+3. Fill up the credentials.
+4. Select your plan.
+> Select Developer as it is free of cost
+Hurrrah! you got your api key. Now copy it  for your further usage.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Install Node JS
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Though many of you already have Node JS installed, some of you,specially the beginners, may not have installed
+in their computers. So for them to install Node Js
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+1. Goto [NodeJS official website](https://nodejs.org/en/ "nodejs.org")
+2. Download the nodejs installer for your computer whatever device you are using
+3. Install the software and follow the on screen instructions.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Clone this repository
 
-## Learn More
+There are two ways to clone this repo to your computer
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### First: Download this code as .zip file
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+[Click Here](https://github.com/Soumodip-Paul/ReactWeb/zipball/main) to download the code in a single zip file.
+Then unzip it in your desired folder
 
-### Code Splitting
+### Using git cloning
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. Create an empty folder 
+2. Goto the folder and  open <br/> `Powershell` for windows and <br/> `Terminal` for MacOS or Linux
+3. Paste the code below 
 
-### Analyzing the Bundle Size
+```bash
+git clone https://github.com/Soumodip-Paul/Songbad-Sonkolon.git --single-branch 
+```
+4. Press enter 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Now the code is successfully copied to your desired folder
 
-### Making a Progressive Web App
+> To use git command you need to download from `Git` from [Git-Scm Official website](https://git-scm.com/downloads)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Install dependencies
 
-### Advanced Configuration
+Goto your project directory and open
+`PowerShell` for Windows or <br/> `Terminal` for MacOs an Linux and just copy and paste the folowing code
+and Press enter
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```bash
+npm i
+```
 
-### Deployment
+> Make sure that you have downloaded ***NodeJS*** to use `npm`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Setup your api key
 
-### `npm run build` fails to minify
+To set up your api key you generated 
+1. Create a file named `.env` in root directory of your project.
+2. Copy the following code to your `.env` file and repalce the `$your-api-key` by Your api key you genereted before.
+```js
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+REACT_APP_API_KEY = "$your-api-key"
+
+```
+
+Hurrah! you are almost there to use the project.
+
+## Run the projet
+
+To run the Project 
+1. Go to the project directory
+2. Open `Powershell` for windows and <br/> `Terminal` for MacOS or Linux
+3. Paste the following command 
+```bash
+npm start
+```
+4. Wait for time till development server starts
+5. Ohhh, the project start working on `localhost:3000`
+6. Go to browser and paste 
+```js
+localhost:3000
+```
+to view your app
+> Note: According to Documentation, News API supports requests only from localhost for Developer mode. So don't use the default ip of react or deploy it. It will be meaningless. To deploy the app in production mode you need to purchase the prememium plan of News API. Also it has only 100 requests per day for developer mode.. So use it very carefully
+
+## Make a optimized build
+
+To make an optimized build of the app just run the following command 
+```bash
+npm run build
+```
+and react will create the optimized build in `%Your Project%/build/` folder.

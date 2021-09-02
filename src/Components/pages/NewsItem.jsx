@@ -5,6 +5,7 @@ import InfiniteScroll from 'react-infinite-scroll-component'
 import { capitalizedFirstLetter } from '../utils/TextUtils'
 import { DarkModeContext } from '../items/DarkMode'
 import PropTypes from 'prop-types'
+import { maxResultsPerPage, country } from '../../constants'
 
 export const NewsItem = ({ items, category, setProgress }) => {
 
@@ -28,11 +29,11 @@ export const NewsItem = ({ items, category, setProgress }) => {
     useEffect(() => {
         if (category && category !== undefined) {
             document.title = capitalizedFirstLetter(category) + " : Songbad Sonkolon"
-            getNewsByCategory("in", category, setResult, setProgress, items, 1, setPageSize)
+            getNewsByCategory(country, category, setResult, setProgress, items, 1, setPageSize)
         }
         else {
             document.title = "Songbad Sonkolon : News App made for you"
-            getNews("in", setResult, setProgress, items, 1, setPageSize)
+            getNews(country, setResult, setProgress, items, 1, setPageSize)
         }
     }, [setProgress, category, items])
 
@@ -43,7 +44,7 @@ export const NewsItem = ({ items, category, setProgress }) => {
                     style={{minHeight: "82.3vh"}}
                     className={`${darkMode.darkMode ? "bg-secondary":""}`}
                     dataLength={articles.length}
-                    next={() => concatResult("in")}
+                    next={() => concatResult(country)}
                     hasMore={!emptyResult && articles.length !== pageSize}
                     loader={
                         <h6 className="text-center text-info">
@@ -68,6 +69,6 @@ NewsItem.propTypes = {
 }
 
 NewsItem.defaultProps = {
-    items: 9,
+    items: maxResultsPerPage,
 }
 
