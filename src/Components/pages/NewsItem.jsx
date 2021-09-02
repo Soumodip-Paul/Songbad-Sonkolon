@@ -40,7 +40,7 @@ export const NewsItem = ({ items, category, setProgress }) => {
         <>
             {articles && articles !== undefined ?
                 <InfiniteScroll
-                    style={{minHeight: "91.4vh"}}
+                    style={{minHeight: "82.3vh"}}
                     className={`${darkMode.darkMode ? "bg-secondary":""}`}
                     dataLength={articles.length}
                     next={() => concatResult("in")}

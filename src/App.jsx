@@ -1,11 +1,12 @@
+import './App.css';
 import { useState } from 'react'
 import LoadingBar from 'react-top-loading-bar'
-import './App.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { NewsItem } from './Components/pages/NewsItem';
 import { NavbarItem } from './Components/items/NavbarItem';
 import { ScrollTop } from './Components/items/ScrollTop';
 import { DarkModeContext } from './Components/items/DarkMode';
+import { Footer } from './Components/items/Footer';
 
 const App = () => {
 	const [progress, setProgress] = useState(0)
@@ -40,8 +41,15 @@ const App = () => {
 					<Route exact path="/health">
 						<NewsItem category="health" setProgress={setProgress} />
 					</Route>
+					<Route exact path="/privacy-policy">
+						<div className={`p-0 m-0 ${darkMode ? "bg-secondary" : "bg-light"}`} style={{minHeight: '82.3vh'}}></div>
+					</Route>
+					<Route exact path="/terms-and-conditions">
+						<div className={`p-0 m-0 ${darkMode ? "bg-secondary" : "bg-light"}`} style={{minHeight: '82.3vh'}}></div>
+					</Route>
 				</Switch>
 				<ScrollTop />
+				<Footer/>
 			</Router>
 		</DarkModeContext.Provider>
 	);
