@@ -27,6 +27,7 @@ This is a public repository so you are open to contribute in my project to make 
 3. Fill up the credentials.
 4. Select your plan.
 > Select Developer as it is free of cost
+
 Hurrrah! you got your api key. Now copy it  for your further usage.
 
 ## Install Node JS
@@ -60,7 +61,7 @@ git clone https://github.com/Soumodip-Paul/Songbad-Sonkolon.git --single-branch
 
 Now the code is successfully copied to your desired folder
 
-> To use git command you need to download from `Git` from [Git-Scm Official website](https://git-scm.com/downloads)
+> To use git command you need to download `Git` from [Git-Scm Official website](https://git-scm.com/downloads "Download Git")
 
 ## Install dependencies
 
@@ -72,7 +73,7 @@ and Press enter
 npm i
 ```
 
-> Make sure that you have downloaded ***NodeJS*** to use `npm`
+> Make sure that you have downloaded **NodeJS** to use `npm`
 
 ## Setup your api key
 
@@ -103,7 +104,7 @@ npm start
 localhost:3000
 ```
 to view your app
-> Note: According to Documentation, News API supports requests only from localhost for Developer mode. So don't use the default ip of react or deploy it. It will be meaningless. To deploy the app in production mode you need to purchase the prememium plan of News API. Also it has only 100 requests per day for developer mode.. So use it very carefully
+> Note: According to Documentation, News API supports requests only from localhost for Developer mode. So don't use the default ip of react or deploy it. It will be meaningless. To deploy the app in production mode you need to purchase the prememium plan of News API. Also it has only 100 requests per day for developer mode. So use it very carefully
 
 ## Make a optimized build
 
