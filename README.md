@@ -1,20 +1,20 @@
 # Songbad Sonkolon
 
-***Songbad Sonkolon*** is a **NEWS APP** which fetces _Latest News_ from the web and show it in the page. Read the *Top Headlines* and news from different categories like _Business, Entertainment, General, Health, Science, Sports, Technology_  . You can scroll through all  of the news easily and efficiently, with only one click you can read your favourite news, goto to your favourite category.Feeling irritating with the color! Change the theme between Light mode and Dark Mode according to your comfortability from the top right corner. Are you have scrolled too many down to page? Don't worry, You can Scorll to top with just only one click on the bottom right arrow . Songbad Sonkolon is here to provide news according according to your wish. No matter you are using it in your Mobile, Tablet or PC. We are always there
-
-## Images
-
-***Original Landing Page in PC***<br/>
 ![IMG](https://lh3.googleusercontent.com/-iBQN2ZBDq6s/YTCIffQYXPI/AAAAAAAAAAM/ZzoTo2xtiDIbTUKfUqp2yNXmzGocpC2pgCLcBGAsYHQ/localhost_3000_%2B%25282%2529.png)
 
-***Landing Page in Mobile (MOTO G4) ***<br/>
+
 ![IMG](https://lh3.googleusercontent.com/-50XB7uSTMqs/YTCIfvYtdkI/AAAAAAAAAAQ/V1Ry6_pU43YJ8ke6MMczQMVBnoezGhfQQCLcBGAsYHQ/localhost_3000_%2528Moto%2BG4%2529.png)
+
+***Songbad Sonkolon*** is a **NEWS APP** which fetces _Latest News_ from the web and show it in the page. Read the *Top Headlines* and news from different categories like _Business, Entertainment, General, Health, Science, Sports, Technology_  . You can scroll through all  of the news easily and efficiently, with only one click you can read your favourite news, goto to your favourite category.Feeling irritating with the color! Change the theme between Light mode and Dark Mode according to your comfortability from the top right corner. Are you have scrolled too many down to page? Don't worry, You can Scorll to top with just only one click on the bottom right arrow . Songbad Sonkolon is here to provide news according according to your wish. No matter you are using it in your Mobile, Tablet or PC. We are always there
+
+<!-- ## Images
+
 
 ***Full Page in Dark Mode***<br/>
 ![IMG](https://lh3.googleusercontent.com/-BaC2gegumt4/YTCIfmI4mFI/AAAAAAAAAAY/mO0vS4mBsCcNRJs--nDsM8P337n7ee_pwCLcBGAsYHQ/localhost_3000_.png)
 
 ***Full Page in Light Mode***<br/>
-![IMG](https://lh3.googleusercontent.com/-FRMQ2TOrE94/YTCIfozskoI/AAAAAAAAAAU/K64Z8Y8m_AMGVX5rk_sOzqi2I-rwk3sZwCLcBGAsYHQ/localhost_3000_%2B%25281%2529.png)
+![IMG](https://lh3.googleusercontent.com/-FRMQ2TOrE94/YTCIfozskoI/AAAAAAAAAAU/K64Z8Y8m_AMGVX5rk_sOzqi2I-rwk3sZwCLcBGAsYHQ/localhost_3000_%2B%25281%2529.png) -->
 
 # Developer Guide
 
