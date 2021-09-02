@@ -4,16 +4,16 @@
 
 ## Images
 
-***Original Landing Page in PC***
+***Original Landing Page in PC***<br/>
 ![IMG](https://lh3.googleusercontent.com/-iBQN2ZBDq6s/YTCIffQYXPI/AAAAAAAAAAM/ZzoTo2xtiDIbTUKfUqp2yNXmzGocpC2pgCLcBGAsYHQ/localhost_3000_%2B%25282%2529.png)
 
-***Landing Page in Mobile (MOTO G4) ***
+***Landing Page in Mobile (MOTO G4) ***<br/>
 ![IMG](https://lh3.googleusercontent.com/-50XB7uSTMqs/YTCIfvYtdkI/AAAAAAAAAAQ/V1Ry6_pU43YJ8ke6MMczQMVBnoezGhfQQCLcBGAsYHQ/localhost_3000_%2528Moto%2BG4%2529.png)
 
-***Full Page in Dark Mode***
+***Full Page in Dark Mode***<br/>
 ![IMG](https://lh3.googleusercontent.com/-BaC2gegumt4/YTCIfmI4mFI/AAAAAAAAAAY/mO0vS4mBsCcNRJs--nDsM8P337n7ee_pwCLcBGAsYHQ/localhost_3000_.png)
 
-***Full Page in Light Mode***
+***Full Page in Light Mode***<br/>
 ![IMG](https://lh3.googleusercontent.com/-FRMQ2TOrE94/YTCIfozskoI/AAAAAAAAAAU/K64Z8Y8m_AMGVX5rk_sOzqi2I-rwk3sZwCLcBGAsYHQ/localhost_3000_%2B%25281%2529.png)
 
 # Developer Guide
