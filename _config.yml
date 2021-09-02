@@ -1,0 +1,5 @@
+layout: page
+title: "Cool Developer Website"
+permalink: /projects/ReactWeb
+show_downloads: true
+theme: jekyll-theme-cayman
