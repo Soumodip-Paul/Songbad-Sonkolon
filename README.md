@@ -26,6 +26,7 @@ This is a public repository so you are open to contribute in my project to make 
 2. Click on ***Get API Key***
 3. Fill up the credentials.
 4. Select your plan.
+
 > Select Developer as it is free of cost
 
 Hurrrah! you got your api key. Now copy it  for your further usage.
